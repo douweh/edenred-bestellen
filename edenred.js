@@ -1,8 +1,8 @@
 const puppeteer = require('puppeteer')
-const expect = require('expect-puppeteer')
+const config = require('./config')
 
-const USERNAME = "####"
-const PASSWORD = "####"
+const USERNAME = config.username
+const PASSWORD = config.password
 
 (async () => {
   const browser = await puppeteer.launch(
